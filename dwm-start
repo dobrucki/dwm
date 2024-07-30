@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+# preserve windows on restart
+while true; do
+	mkdir -p "$HOME/.local/state/dwm"
+	dwm 2> "$HOME/.local/state/dwm/dwm.log"
+done
+# vim: set filetype=sh
+
